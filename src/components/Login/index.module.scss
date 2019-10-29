@@ -1,0 +1,73 @@
+.baseModal {
+  padding-bottom: 30px;
+  .title {
+    font-size: 21px;
+    margin-top: 12px;
+    color: #333;
+    text-align: center;
+  }
+  .inputGroup{
+    margin-top: 30px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+
+    &.phone{
+      .iconOne{
+        flex: 0 15px;
+        display: block;
+        height: 25px;
+      }
+      .input{
+        flex: 1;
+        width: 210px;
+        display: block;
+        height: 44px;
+        line-height: 44px;
+        padding-left: 10px;
+        font-size: 18px;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    &.code{
+      .icon{
+        width: 19px;
+        height: 21px;
+      }
+      .input{
+        flex: 1;
+        height: 44px;
+        line-height: 44px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        .inputInner{
+          padding-left: 10px;
+          font-size: 18px;
+          width: 120px;
+        }
+        .sendBtn{
+          position: absolute;
+          width:80px;
+          height:32px;
+          color: #fff;
+          text-align: center;
+          line-height: 32px;
+          background:rgba(1,173,9,1);
+          font-size: 12px;
+          right: 0;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+  .loginBtn{
+    width: 230px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 22.5px;
+    background:linear-gradient(-90deg,rgba(255,164,0,1),rgba(255,195,87,1));
+    margin: 60px auto 0 auto;
+  }
+}
