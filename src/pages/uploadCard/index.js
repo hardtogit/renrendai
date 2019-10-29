@@ -29,7 +29,7 @@ class Index extends Component {
           sessionStorage.setItem('paramsFour',JSON.stringify({postive:this.postive,nagetive:this.nagetive}))
           hashHistory.push('/steptwo')
       }else{
-          toast('请先完善质料')
+          toast('请先完善资料')
       }
     };
     changeOne=(e)=>{
@@ -92,7 +92,7 @@ class Index extends Component {
                             <img className={styles.picture} ref="front" src="" alt=""/>
                             <img className={styles.circle} src={circle} alt=""/>
                             <div className={styles.text}>上传本人身份证(正)</div>
-                            <input onChange={this.changeOne} ref="file1" className={styles.input} type="file"/>
+                            <input  accept="image/*"  onChange={this.changeOne} ref="file1" className={styles.input} type="file"/>
                         </div>
                     </div>
                     <div className={styles.content}>
@@ -100,7 +100,7 @@ class Index extends Component {
                             <img className={styles.picture} ref="back" src="" alt=""/>
                             <img className={styles.circle} src={circle} alt=""/>
                             <div className={styles.text}>上传本人身份证(反)</div>
-                            <input onChange={this.changeTwo} ref="file2" className={styles.input} type="file"/>
+                            <input accept="image/*"  onChange={this.changeTwo} ref="file2" className={styles.input} type="file"/>
                         </div>
                     </div>
                 </div>
