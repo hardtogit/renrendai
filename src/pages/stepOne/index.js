@@ -51,7 +51,7 @@ class Index extends Component {
     }
     if(params.role&&params.grade&&params.name&&params.idcard&&params.home_add){
       sessionStorage.setItem('paramsOne',JSON.stringify(params))
-      hashHistory.push('/steptwo')
+      hashHistory.push('/uploadcard')
     }else{
       toast('请完善信息！')
     }

@@ -18,7 +18,10 @@ class Index extends Component {
       card_num:this.card_num.value,
       card_bank:this.card_bank.value,
     }
-    const params={...JSON.parse(sessionStorage.getItem('paramsOne')),...JSON.parse(sessionStorage.getItem('paramsTwo')),...paramsThree}
+    const params={...JSON.parse(sessionStorage.getItem('paramsOne')),
+        ...JSON.parse(sessionStorage.getItem('paramsTwo')),
+        ...JSON.parse(sessionStorage.getItem('paramsFour')),
+        ...paramsThree}
     console.log(params)
     Fetch({
       obj:'user',

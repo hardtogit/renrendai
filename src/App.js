@@ -5,6 +5,7 @@ import Home from './pages/home'
 import StepOne from './pages/stepOne'
 import StepTwo from './pages/stepTwo'
 import StepThree from './pages/stepThree'
+import UploadCard from './pages/uploadCard'
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="stepone" component={StepOne}/>
         <Route path="steptwo" component={StepTwo}/>
         <Route path="stepthree" component={StepThree}/>
+        <Route path="uploadcard" component={UploadCard}/>
       </Route>
       <Redirect from="/*" to="/" />
     </Router>
